@@ -1,0 +1,215 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    .contact-page {
+      background-color: #f8f9fa;
+      min-height: 100vh;
+      padding: 40px 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      font-family: Arial, sans-serif;
+    }
+
+    .contact-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      max-width: 900px;
+      width: 85%;
+      padding: 32px 40px;
+      display: flex;
+      gap: 32px;
+    }
+
+    .contact-details {
+      flex: 1.2;
+    }
+
+    .contact-details h1 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .contact-details p.lead {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 24px;
+    }
+
+    .contact-info-item {
+      margin-bottom: 16px;
+    }
+
+    .contact-info-label {
+      font-weight: bold;
+      color: #0f6b79;
+      display: block;
+    }
+
+    .contact-info-value {
+      margin-left: 2px;
+    }
+
+    .hours-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    .hours-list li {
+      display: flex;
+      justify-content: space-between;
+      max-width: 260px;
+    }
+
+    .contact-form {
+      flex: 1;
+      border-left: 1px solid #e2e2e2;
+      padding-left: 24px;
+    }
+
+    .contact-form h2 {
+      font-size: 1.25rem;
+      margin-bottom: 16px;
+    }
+
+    .form-group {
+      margin-bottom: 12px;
+    }
+
+    .form-label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+      display: block;
+    }
+
+    .form-control-custom {
+      width: 100%;
+      border-radius: 6px;
+      border: 1px solid #ced4da;
+      padding: 8px 10px;
+      font-size: 0.9rem;
+    }
+
+    .form-control-custom:focus {
+      outline: none;
+      border-color: darkturquoise;
+      box-shadow: 0 0 0 2px rgba(64, 224, 208, 0.25);
+    }
+
+    .btn-contact {
+      background-color: darkturquoise;
+      color: #fff;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      margin-top: 4px;
+    }
+
+    .btn-contact:hover {
+      background-color: #12a3a3;
+    }
+
+    @media (max-width: 768px) {
+      .contact-card {
+        flex-direction: column;
+        padding: 24px;
+      }
+
+      .contact-form {
+        border-left: none;
+        border-top: 1px solid #e2e2e2;
+        padding-left: 0;
+        padding-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="contact-page">
+    <div class="contact-card">
+      <div class="contact-details">
+        <h1>Contact Best Cars Dealership</h1>
+        <p class="lead">
+          Have a question about a vehicle, financing options, or service appointment? Our team is here to help.
+          Reach out using the details below or send us a message and we will follow up as soon as possible.
+        </p>
+
+        <div class="contact-info-item">
+          <span class="contact-info-label">Showroom Address</span>
+          <span class="contact-info-value">1240 Lakeside Avenue, Suite 200, Toronto, ON M5J 2N8</span>
+        </div>
+
+        <div class="contact-info-item">
+          <span class="contact-info-label">Phone</span>
+          <span class="contact-info-value">+1 (416) 555‑0134</span>
+        </div>
+
+        <div class="contact-info-item">
+          <span class="contact-info-label">Email</span>
+          <span class="contact-info-value">support@bestcars.com</span>
+        </div>
+
+        <div class="contact-info-item">
+          <span class="contact-info-label">Business Hours</span>
+          <ul class="hours-list">
+            <li><span>Mon–Fri</span><span>9:00 AM – 7:00 PM</span></li>
+            <li><span>Saturday</span><span>10:00 AM – 5:00 PM</span></li>
+            <li><span>Sunday</span><span>Closed</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <div class="form-group">
+          <label class="form-label" for="name">Full Name</label>
+          <input id="name" type="text" class="form-control-custom" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input id="email" type="email" class="form-control-custom" placeholder="you@example.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="phone">Phone (optional)</label>
+          <input id="phone" type="tel" class="form-control-custom" placeholder="+1 (555) 123‑4567">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea id="message" rows="4" class="form-control-custom" placeholder="Tell us how we can help you"></textarea>
+        </div>
+        <button class="btn-contact" type="button">Submit Inquiry</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
