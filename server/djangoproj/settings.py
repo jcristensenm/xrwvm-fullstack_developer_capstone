@@ -61,11 +61,12 @@ ROOT_URLCONF = 'djangoproj.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
-            os.path.join(BASE_DIR, 'frontend/static'),
-            os.path.join(BASE_DIR, 'frontend/build'),
-            os.path.join(BASE_DIR, 'frontend/build/static'),
-        ],
+       'DIRS': [
+    		os.path.join(BASE_DIR, 'frontend/public'),
+    		os.path.join(BASE_DIR, 'frontend/static'),
+    		os.path.join(BASE_DIR, 'frontend/build'),
+    		os.path.join(BASE_DIR, 'frontend/build/static'),
+		],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
