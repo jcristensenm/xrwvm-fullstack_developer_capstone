@@ -16,3 +16,7 @@ https://github.com/jcristensenm/xrwvm-fullstack_developer_capstone/blob/main/ser
 
 https://github.com/jcristensenm/xrwvm-fullstack_developer_capstone/blob/main/server/frontend/static/Contact.html
 
+ curl -X POST "https://jcristensen1-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai
+/djangoapp/login"   -H "Content-Type: application/json"   -d '{"userName"
+: "jcristensen1", "password": "123456"}'
+{"userName": "jcristensen1", "status": "Authenticated"}theia@theia-jcristensen1:/home/project$ 
