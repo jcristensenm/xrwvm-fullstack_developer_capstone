@@ -23,4 +23,8 @@ https://github.com/jcristensenm/xrwvm-fullstack_developer_capstone/blob/main/ser
 
 
 curl -X GET "https://jcristensen1-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/djangoapp/logout"
-{"userName": ""}t
+{"userName": ""}
+
+https://github.com/jcristensenm/xrwvm-fullstack_developer_capstone/blob/main/server/frontend/src/components/Register/Register.jsx
+
+
